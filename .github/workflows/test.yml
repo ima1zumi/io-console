@@ -26,6 +26,8 @@ jobs:
           - ruby: jruby-head
           - ruby: truffleruby
           - ruby: truffleruby-head
+          - ruby: mingw
+          - ruby: mswin
     runs-on: ${{ matrix.os || 'ubuntu-latest' }}
     steps:
     - name: git config
