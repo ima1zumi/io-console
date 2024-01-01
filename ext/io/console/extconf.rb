@@ -6,6 +6,10 @@ version = ["../../..", "."].find do |dir|
 rescue
 end
 
+pp "*" *30
+pp "io-console version #{version}"
+pp "*" *30
+
 have_func("rb_io_path")
 have_func("rb_io_descriptor")
 have_func("rb_io_get_write_io")
