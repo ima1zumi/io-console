@@ -41,6 +41,8 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         rubygems: latest
+    - name: install test
+      run: gem install io-console
     - name: Experiment with a manual bundle install
       run: bundle install
     - name: Run test
